@@ -1,0 +1,47 @@
+import React from "react";
+import {
+  FaMobileAlt,
+  FaLaptop,
+  FaHeadphones,
+  FaClock,
+  FaShoppingCart,
+} from "react-icons/fa";
+
+Iska kaam:
+React import kiya component banane ke liye
+react-icons/fa se Font Awesome icons liye:
+mobile icon
+laptop icon
+headphones icon
+clock icon
+cart icon
+
+<div className="row g-4">
+  {products.map((item) => (
+Important part:
+
+Yaha products.map() use hua hai.
+
+Matlab:
+
+products array ke har item ke liye
+ek naya card banega automatically
+
+Ye array ke har item par ek baar chalta hai aur naya output return karta hai.
+
+Matlab agar tumhare paas 4 products hain aur tum 4 cards dikhana chahte ho, to tum 4 baar alag card likhne ki jagah map() use karte ho.
+
+Maan lo tumhare paas ye product data hai:
+
+const products = [
+  { id: 1, title: "Mobile", price: 10000 },
+  { id: 2, title: "Laptop", price: 50000 },
+  { id: 3, title: "Watch", price: 3000 }
+];
+
+{products.map((item) => (
+  <div key={item.id}>
+    <h2>{item.title}</h2>
+    <p>₹ {item.price}</p>
+  </div>
+))}
