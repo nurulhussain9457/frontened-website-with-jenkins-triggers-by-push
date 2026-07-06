@@ -1,21 +1,18 @@
-<<<<<<< HEAD
-# React + Vite
+command push
+git branch -M main
+git remote -v
+Agar output me origin aa raha hai, to theek warna ye chala
+git remote add origin https://github.com/nurulhussain9457/frontened-website-with-jenkins-triggers-by-push.git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+kyu ki yaha readme enable kiya
+Step 4: remote se README wala code pull karo
+Ye bahut important hai, kyunki GitHub repo me README already hai.
+git pull origin main --allow-unrelated-histories
 
-Currently, two official plugins are available:
+git push -u origin main
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# frontened-website-with-jenkins-triggers-by-push
-buid static website now jenkins pull code then they buid then deploy in jenkins
->>>>>>> 1a4aea0ec90ce9be0d7933728ce9239d43ea70a7
+full command
+git branch -M main
+git remote -v
+git pull origin main --allow-unrelated-histories
+git push -u origin main
